@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FakeItEasy" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="coverlet.collector" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Core\Infrastructor\Infrastructor.csproj" />
+    <ProjectReference Include="..\..\src\Core\Domain\Domain.csproj" />
+    <ProjectReference Include="..\..\src\Core\Data\Data.csproj" />
+    <ProjectReference Include="..\..\src\Admin\Application\Application.csproj" />
+  </ItemGroup>
+
+</Project>

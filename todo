@@ -1,0 +1,17 @@
+-Öncelikli-
+Exception refactor
+Unit test
+Integration test
+
+-Gerekli-
+Auth Mekanizması
+Rate Limit
+Basic Log
+
+-Opsiyonel-
+Sms Servisi
+Mail Servisi
+Logger
+Cache Mekanizması
+MQ Mekanizması
+File Storage
