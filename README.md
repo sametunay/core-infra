@@ -28,42 +28,42 @@ Tüm katmanların kullanabileceği herkese açık bir altyapı sunmayı amaçlar
 
 # Folder Structure
 
-├── src
-│   ├── Admin
-│   │   ├── Api
-│   │   │   └── Controllers
-│   │   └── Application
-│   │       ├── Dto
-│   │       ├── Mapper
-│   │       ├── Services
-│   │       └── Validations
-│   ├── Core
-│   │   ├── Data
-│   │   │   ├── Contexts
-│   │   │   └── Migrations
-│   │   ├── Domain
-│   │   │   ├── Dto
-│   │   │   ├── Entities
-│   │   │   ├── Enums
-│   │   │   ├── Exceptions
-│   │   │   ├── Helper
-│   │   │   ├── Middleware
-│   │   │   ├── Options
-│   │   │   └── ValueObjects
-│   │   └── Infrastructor
-│   │       ├── Log
-│   │       ├── Mail
-│   │       ├── Repositories
-│   │       ├── Sms
-│   │       ├── UnitOfWork
-│   │       └── Utility
-│   └── UI
-│       ├── Api
-│       │   └── Controllers
-│       └── Application
-│           ├── Dto
-│           ├── Mapper
-│           └── Services
-└── test
-    ├── Integration.Test
-    └── Unit.Test
+    ├── src
+    │   ├── Admin
+    │   │   ├── Api
+    │   │   │   └── Controllers
+    │   │   └── Application
+    │   │       ├── Dto
+    │   │       ├── Mapper
+    │   │       ├── Services
+    │   │       └── Validations
+    │   ├── Core
+    │   │   ├── Data
+    │   │   │   ├── Contexts
+    │   │   │   └── Migrations
+    │   │   ├── Domain
+    │   │   │   ├── Dto
+    │   │   │   ├── Entities
+    │   │   │   ├── Enums
+    │   │   │   ├── Exceptions
+    │   │   │   ├── Helper
+    │   │   │   ├── Middleware
+    │   │   │   ├── Options
+    │   │   │   └── ValueObjects
+    │   │   └── Infrastructor
+    │   │       ├── Log
+    │   │       ├── Mail
+    │   │       ├── Repositories
+    │   │       ├── Sms
+    │   │       ├── UnitOfWork
+    │   │       └── Utility
+    │   └── UI
+    │       ├── Api
+    │       │   └── Controllers
+    │       └── Application
+    │           ├── Dto
+    │           ├── Mapper
+    │           └── Services
+    └── test
+        ├── Integration.Test
+        └── Unit.Test
