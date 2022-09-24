@@ -3,7 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MyGallery.Core.Data.Contexts.EF;
+using CI.Core.Data.Contexts.EF;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
@@ -22,7 +22,7 @@ namespace Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.Brand", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.Brand", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -41,7 +41,7 @@ namespace Data.Migrations
                     b.ToTable("Brands");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.Car", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.Car", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -73,7 +73,7 @@ namespace Data.Migrations
                     b.ToTable("Cars");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.CarCategory", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.CarCategory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -92,9 +92,9 @@ namespace Data.Migrations
                     b.ToTable("CarCategories");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.Brand", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.Brand", b =>
                 {
-                    b.OwnsOne("MyGallery.Core.Domain.ValueObjects.Audit", "Audit", b1 =>
+                    b.OwnsOne("CI.Core.Domain.ValueObjects.Audit", "Audit", b1 =>
                         {
                             b1.Property<int>("BrandId")
                                 .HasColumnType("integer");
@@ -125,21 +125,21 @@ namespace Data.Migrations
                     b.Navigation("Audit");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.Car", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.Car", b =>
                 {
-                    b.HasOne("MyGallery.Core.Domain.Entities.Brand", "Brand")
+                    b.HasOne("CI.Core.Domain.Entities.Brand", "Brand")
                         .WithMany("Cars")
                         .HasForeignKey("BrandId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MyGallery.Core.Domain.Entities.CarCategory", "CarCategory")
+                    b.HasOne("CI.Core.Domain.Entities.CarCategory", "CarCategory")
                         .WithMany("Cars")
                         .HasForeignKey("CarCategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.OwnsOne("MyGallery.Core.Domain.ValueObjects.Audit", "Audit", b1 =>
+                    b.OwnsOne("CI.Core.Domain.ValueObjects.Audit", "Audit", b1 =>
                         {
                             b1.Property<int>("CarId")
                                 .HasColumnType("integer");
@@ -167,7 +167,7 @@ namespace Data.Migrations
                                 .HasForeignKey("CarId");
                         });
 
-                    b.OwnsOne("MyGallery.Core.Domain.ValueObjects.PowerInfo", "PowerInfo", b1 =>
+                    b.OwnsOne("CI.Core.Domain.ValueObjects.PowerInfo", "PowerInfo", b1 =>
                         {
                             b1.Property<int>("CarId")
                                 .HasColumnType("integer");
@@ -182,7 +182,7 @@ namespace Data.Migrations
                             b1.WithOwner()
                                 .HasForeignKey("CarId");
 
-                            b1.OwnsOne("MyGallery.Core.Domain.ValueObjects.Engine", "Engine", b2 =>
+                            b1.OwnsOne("CI.Core.Domain.ValueObjects.Engine", "Engine", b2 =>
                                 {
                                     b2.Property<int>("PowerInfoCarId")
                                         .HasColumnType("integer");
@@ -222,9 +222,9 @@ namespace Data.Migrations
                     b.Navigation("PowerInfo");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.CarCategory", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.CarCategory", b =>
                 {
-                    b.OwnsOne("MyGallery.Core.Domain.ValueObjects.Audit", "Audit", b1 =>
+                    b.OwnsOne("CI.Core.Domain.ValueObjects.Audit", "Audit", b1 =>
                         {
                             b1.Property<int>("CarCategoryId")
                                 .HasColumnType("integer");
@@ -255,12 +255,12 @@ namespace Data.Migrations
                     b.Navigation("Audit");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.Brand", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.Brand", b =>
                 {
                     b.Navigation("Cars");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.CarCategory", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.CarCategory", b =>
                 {
                     b.Navigation("Cars");
                 });

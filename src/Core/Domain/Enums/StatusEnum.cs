@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace MyGallery.Core.Domain.Enums
+namespace CI.Core.Domain.Enums
 {
     public enum StatusEnum
     {

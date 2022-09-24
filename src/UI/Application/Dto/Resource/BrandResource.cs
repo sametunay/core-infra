@@ -1,4 +1,4 @@
-namespace MyGallery.UI.Application.Dto.Resource;
+namespace CI.UI.Application.Dto.Resource;
 
 public record BrandResource : CoreResource
 {

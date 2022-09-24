@@ -1,9 +1,9 @@
 using AutoMapper;
-using MyGallery.Core.Domain.Entities;
-using MyGallery.Core.Infrastructor.Repositories.Interfaces;
-using MyGallery.UI.Application.Services.Interfaces;
+using CI.Core.Domain.Entities;
+using CI.Core.Infrastructor.Repositories.Interfaces;
+using CI.UI.Application.Services.Interfaces;
 
-namespace MyGallery.UI.Application.Services.Imlementation;
+namespace CI.UI.Application.Services.Imlementation;
 
 public class BrandService : BaseService<Brand, int>, IBrandService
 {

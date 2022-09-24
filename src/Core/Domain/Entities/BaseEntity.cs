@@ -1,7 +1,7 @@
 using System;
-using MyGallery.Core.Domain.ValueObjects;
+using CI.Core.Domain.ValueObjects;
 
-namespace MyGallery.Core.Domain.Entities
+namespace CI.Core.Domain.Entities
 {
     public abstract class BaseEntity<TKey> : ICloneable where TKey: unmanaged
     {

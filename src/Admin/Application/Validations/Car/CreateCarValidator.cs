@@ -1,7 +1,7 @@
 using FluentValidation;
-using MyGallery.Admin.Application.Dto.Create;
+using CI.Admin.Application.Dto.Create;
 
-namespace MyGallery.Admin.Application.Validations.Car;
+namespace CI.Admin.Application.Validations.Car;
 
 public class CreateCarValidator : AbstractValidator<CreateCarDto>
 {

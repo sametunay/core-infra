@@ -1,8 +1,8 @@
-using MyGallery.Core.Data.Contexts.EF;
-using MyGallery.Core.Domain.Entities;
-using MyGallery.Core.Infrastructor.Repositories.Interfaces;
+using CI.Core.Data.Contexts.EF;
+using CI.Core.Domain.Entities;
+using CI.Core.Infrastructor.Repositories.Interfaces;
 
-namespace MyGallery.Core.Infrastructor.Repositories.Implementation
+namespace CI.Core.Infrastructor.Repositories.Implementation
 {
     public class BrandRepository : BaseRepository<Brand, int>, IBrandRepository
     {

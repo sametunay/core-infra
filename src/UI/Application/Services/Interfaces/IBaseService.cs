@@ -1,7 +1,7 @@
-using MyGallery.Core.Domain.Dto;
-using MyGallery.Core.Domain.Entities;
+using CI.Core.Domain.Dto;
+using CI.Core.Domain.Entities;
 
-namespace MyGallery.UI.Application.Services.Interfaces;
+namespace CI.UI.Application.Services.Interfaces;
 
 public interface IBaseService<TEntity, TKey> where TEntity : BaseEntity<TKey>, new() where TKey : unmanaged
 {

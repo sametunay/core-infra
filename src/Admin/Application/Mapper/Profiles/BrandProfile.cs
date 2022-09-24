@@ -1,10 +1,10 @@
 using AutoMapper;
-using MyGallery.Admin.Application.Dto.Create;
-using MyGallery.Admin.Application.Dto.Resource;
-using MyGallery.Admin.Application.Dto.Update;
-using MyGallery.Core.Domain.Entities;
+using CI.Admin.Application.Dto.Create;
+using CI.Admin.Application.Dto.Resource;
+using CI.Admin.Application.Dto.Update;
+using CI.Core.Domain.Entities;
 
-namespace MyGallery.Admin.Application.Mapper.Profiles;
+namespace CI.Admin.Application.Mapper.Profiles;
 
 public class BrandProfile : Profile
 {

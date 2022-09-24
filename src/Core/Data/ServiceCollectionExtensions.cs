@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MyGallery.Core.Data.Contexts.EF;
+using CI.Core.Data.Contexts.EF;
 
-namespace MyGallery.Core.Data
+namespace CI.Core.Data
 {
     public static class ServiceCollectionExtensions
     {

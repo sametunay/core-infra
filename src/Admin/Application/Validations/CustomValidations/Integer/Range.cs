@@ -1,7 +1,7 @@
 using FluentValidation;
 using FluentValidation.Validators;
 
-namespace MyGallery.Admin.Application.Validations.CustomeValidations;
+namespace CI.Admin.Application.Validations.CustomeValidations;
 
 
 // TODO: Yazılmış zaten :D

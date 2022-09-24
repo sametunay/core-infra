@@ -1,9 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
-using MyGallery.UI.Application.Mapper;
-using MyGallery.UI.Application.Services.Imlementation;
-using MyGallery.UI.Application.Services.Interfaces;
+using CI.UI.Application.Mapper;
+using CI.UI.Application.Services.Imlementation;
+using CI.UI.Application.Services.Interfaces;
 
-namespace MyGallery.UI.Application;
+namespace CI.UI.Application;
 
 public static class ServiceCollectionExtensions
 {

@@ -1,10 +1,10 @@
 using AutoMapper;
-using MyGallery.Admin.Application.Service.Interfaces;
-using MyGallery.Core.Domain.Dto;
-using MyGallery.Core.Domain.Entities;
-using MyGallery.Core.Infrastructor.Repositories.Interfaces;
+using CI.Admin.Application.Service.Interfaces;
+using CI.Core.Domain.Dto;
+using CI.Core.Domain.Entities;
+using CI.Core.Infrastructor.Repositories.Interfaces;
 
-namespace MyGallery.Admin.Application.Service.Implementation;
+namespace CI.Admin.Application.Service.Implementation;
 
 public class BrandService : BaseService<Brand, int, ResultDto>, IBrandService
 {

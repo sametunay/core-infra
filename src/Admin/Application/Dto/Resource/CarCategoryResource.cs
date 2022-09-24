@@ -1,4 +1,4 @@
-namespace MyGallery.Admin.Application.Dto.Resource;
+namespace CI.Admin.Application.Dto.Resource;
 
 public record CarCategoryResource : CoreResource
 {

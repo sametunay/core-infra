@@ -1,6 +1,6 @@
 using System;
 
-namespace MyGallery.Core.Domain.Exceptions;
+namespace CI.Core.Domain.Exceptions;
 
 [Serializable]
 public class BaseException : Exception

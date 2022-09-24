@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
-using MyGallery.Core.Domain.Entities;
+using CI.Core.Domain.Entities;
 
-namespace MyGallery.Core.Infrastructor.Repositories.Interfaces
+namespace CI.Core.Infrastructor.Repositories.Interfaces
 {
     public interface IBaseRepository<TEntity, TKey> where TEntity : BaseEntity<TKey>, new() where TKey : unmanaged
     {

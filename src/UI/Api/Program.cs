@@ -1,9 +1,9 @@
 using System.Text.Json.Serialization;
 using Microsoft.OpenApi.Models;
-using MyGallery.Core.Domain;
-using MyGallery.Core.Domain.Options;
-using MyGallery.Core.Infrastructor;
-using MyGallery.UI.Application;
+using CI.Core.Domain;
+using CI.Core.Domain.Options;
+using CI.Core.Infrastructor;
+using CI.UI.Application;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -49,7 +49,7 @@ void SetApiInfo(SwaggerGenOptions options)
     options.SwaggerDoc("v1", new OpenApiInfo()
     {
         Version = "v1",
-        Title = "MyGallery UI",
+        Title = "CI UI",
         Description = "Basit bir get api.",
         TermsOfService = new Uri("https://support@mygallery.com"),
         Contact = new OpenApiContact()

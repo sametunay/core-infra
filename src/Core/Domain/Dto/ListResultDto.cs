@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using MyGallery.Core.Domain.Helper.Extensions;
+using CI.Core.Domain.Helper.Extensions;
 
-namespace MyGallery.Core.Domain.Dto;
+namespace CI.Core.Domain.Dto;
 
 public record ListResultDto<TResult> : ResultDto
 {

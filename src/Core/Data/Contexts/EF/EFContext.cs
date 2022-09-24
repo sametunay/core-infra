@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using MyGallery.Core.Domain.Entities;
+using CI.Core.Domain.Entities;
 
-namespace MyGallery.Core.Data.Contexts.EF
+namespace CI.Core.Data.Contexts.EF
 {
     public class EFContext : DbContext
     {

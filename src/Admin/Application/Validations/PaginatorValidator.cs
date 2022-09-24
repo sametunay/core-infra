@@ -1,7 +1,7 @@
 using FluentValidation;
-using MyGallery.Core.Domain.Dto;
+using CI.Core.Domain.Dto;
 
-namespace MyGallery.Admin.Application.Validations;
+namespace CI.Admin.Application.Validations;
 
 public class PaginatorValidator : AbstractValidator<PaginatorDto>
 {

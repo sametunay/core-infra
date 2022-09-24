@@ -1,6 +1,6 @@
-using MyGallery.Core.Domain.Entities;
+using CI.Core.Domain.Entities;
 
-namespace MyGallery.Core.Infrastructor.Repositories.Interfaces
+namespace CI.Core.Infrastructor.Repositories.Interfaces
 {
     public interface IBrandRepository : IBaseRepository<Brand, int>
     {

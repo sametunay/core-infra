@@ -1,9 +1,9 @@
 using System;
 using System.Net;
-using MyGallery.Core.Domain.Exceptions;
-using MyGallery.Core.Domain.Exceptions.Messages;
+using CI.Core.Domain.Exceptions;
+using CI.Core.Domain.Exceptions.Messages;
 
-namespace MyGallery.Core.Domain.Helper.Extensions;
+namespace CI.Core.Domain.Helper.Extensions;
 
 public static class ExceptionExtensions
 {

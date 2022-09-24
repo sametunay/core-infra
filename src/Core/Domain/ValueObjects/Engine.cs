@@ -1,4 +1,4 @@
-namespace MyGallery.Core.Domain.ValueObjects
+namespace CI.Core.Domain.ValueObjects
 {
     public record Engine
     {

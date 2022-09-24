@@ -1,6 +1,6 @@
-using MyGallery.Admin.Application.Dto.Create;
+using CI.Admin.Application.Dto.Create;
 
-namespace MyGallery.Admin.Application.Dto.Update;
+namespace CI.Admin.Application.Dto.Update;
 
 public record UpdateCarDto : CreateCarDto
 {    

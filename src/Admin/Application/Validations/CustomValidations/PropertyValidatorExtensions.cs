@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace MyGallery.Admin.Application.Validations.CustomeValidations;
+namespace CI.Admin.Application.Validations.CustomeValidations;
 
 public static class PropertyValidatorExtensions
 {

@@ -1,7 +1,7 @@
 using System;
-using MyGallery.Core.Domain.Enums;
+using CI.Core.Domain.Enums;
 
-namespace MyGallery.Core.Domain.ValueObjects
+namespace CI.Core.Domain.ValueObjects
 {
     public class Audit
     {

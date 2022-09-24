@@ -1,7 +1,7 @@
-using MyGallery.Core.Domain.Dto;
-using MyGallery.Core.Domain.Entities;
+using CI.Core.Domain.Dto;
+using CI.Core.Domain.Entities;
 
-namespace MyGallery.Admin.Application.Service.Interfaces;
+namespace CI.Admin.Application.Service.Interfaces;
 
 public interface ICarCategoryService : IBaseService<CarCategory, int, ResultDto>
 {    

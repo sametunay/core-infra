@@ -1,7 +1,7 @@
 using FluentValidation;
-using MyGallery.Admin.Application.Dto.Update;
+using CI.Admin.Application.Dto.Update;
 
-namespace MyGallery.Admin.Application.Validations.Brand;
+namespace CI.Admin.Application.Validations.Brand;
 
 public class UpdateBrandValidator : AbstractValidator<UpdateBrandDto>
 {

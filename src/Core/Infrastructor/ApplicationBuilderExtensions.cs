@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MyGallery.Core.Data.Contexts.EF;
+using CI.Core.Data.Contexts.EF;
 
-namespace MyGallery.Core.Infrastructor;
+namespace CI.Core.Infrastructor;
 
 public static class ApplicationBuilderExtensions
 {

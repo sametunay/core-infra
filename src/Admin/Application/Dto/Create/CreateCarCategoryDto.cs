@@ -1,4 +1,4 @@
-namespace MyGallery.Admin.Application.Dto.Create;
+namespace CI.Admin.Application.Dto.Create;
 
 public record CreateCarCategoryDto
 {

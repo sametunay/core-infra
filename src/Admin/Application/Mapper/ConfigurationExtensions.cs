@@ -1,8 +1,8 @@
 using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
-using MyGallery.Admin.Application.Mapper.Profiles;
+using CI.Admin.Application.Mapper.Profiles;
 
-namespace MyGallery.Admin.Application.Mapper;
+namespace CI.Admin.Application.Mapper;
 
 public static class ConfigurationExtensions
 {

@@ -1,6 +1,6 @@
-using MyGallery.Core.Domain.ValueObjects;
+using CI.Core.Domain.ValueObjects;
 
-namespace MyGallery.UI.Application.Dto.Resource;
+namespace CI.UI.Application.Dto.Resource;
 
 public record CarResource : CoreResource
 {

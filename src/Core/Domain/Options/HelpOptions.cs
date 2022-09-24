@@ -1,4 +1,4 @@
-namespace MyGallery.Core.Domain.Options;
+namespace CI.Core.Domain.Options;
 
 public record HelpOptions
 {

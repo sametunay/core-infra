@@ -1,8 +1,8 @@
 using AutoMapper;
-using MyGallery.Core.Domain.Entities;
-using MyGallery.UI.Application.Dto.Resource;
+using CI.Core.Domain.Entities;
+using CI.UI.Application.Dto.Resource;
 
-namespace MyGallery.UI.Application.Mapper.Profiles;
+namespace CI.UI.Application.Mapper.Profiles;
 
 public class CarCategoryProfile : Profile
 {

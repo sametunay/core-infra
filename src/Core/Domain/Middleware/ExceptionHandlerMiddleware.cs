@@ -2,9 +2,9 @@ using System;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using MyGallery.Core.Domain.Helper.Extensions;
+using CI.Core.Domain.Helper.Extensions;
 
-namespace MyGallery.Core.Domain.Middleware;
+namespace CI.Core.Domain.Middleware;
 
 public class ExceptionHandlerMiddleware : IMiddleware
 {

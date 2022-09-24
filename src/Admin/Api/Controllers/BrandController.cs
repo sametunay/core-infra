@@ -1,13 +1,13 @@
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
-using MyGallery.Admin.Application.Dto;
-using MyGallery.Admin.Application.Dto.Create;
-using MyGallery.Admin.Application.Dto.Resource;
-using MyGallery.Admin.Application.Dto.Update;
-using MyGallery.Admin.Application.Service.Interfaces;
-using MyGallery.Core.Domain.Dto;
+using CI.Admin.Application.Dto;
+using CI.Admin.Application.Dto.Create;
+using CI.Admin.Application.Dto.Resource;
+using CI.Admin.Application.Dto.Update;
+using CI.Admin.Application.Service.Interfaces;
+using CI.Core.Domain.Dto;
 
-namespace MyGallery.Admin.Api.Controller;
+namespace CI.Admin.Api.Controller;
 
 [ApiController]
 [Route("api/brands")]

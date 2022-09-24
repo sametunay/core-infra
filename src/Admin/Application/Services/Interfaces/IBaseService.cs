@@ -1,9 +1,9 @@
-using MyGallery.Admin.Application.Dto;
-using MyGallery.Admin.Application.Dto.Resource;
-using MyGallery.Core.Domain.Dto;
-using MyGallery.Core.Domain.Entities;
+using CI.Admin.Application.Dto;
+using CI.Admin.Application.Dto.Resource;
+using CI.Core.Domain.Dto;
+using CI.Core.Domain.Entities;
 
-namespace MyGallery.Admin.Application.Service.Interfaces;
+namespace CI.Admin.Application.Service.Interfaces;
 
 public interface IBaseService<in TEntity, in TKey, TResult> where TEntity : BaseEntity<TKey>, new() where TKey : unmanaged where TResult : ResultDto, new()
 {

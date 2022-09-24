@@ -1,9 +1,9 @@
 using System;
 using System.Net;
 using System.Text.Json.Serialization;
-using MyGallery.Core.Domain.Helper.Extensions;
+using CI.Core.Domain.Helper.Extensions;
 
-namespace MyGallery.Core.Domain.Exceptions;
+namespace CI.Core.Domain.Exceptions;
 
 [Serializable]
 public class HttpException

@@ -1,6 +1,6 @@
-using MyGallery.Core.Domain.Enums;
+using CI.Core.Domain.Enums;
 
-namespace MyGallery.UI.Application.Dto.Resource;
+namespace CI.UI.Application.Dto.Resource;
 
 public record CoreResource
 {

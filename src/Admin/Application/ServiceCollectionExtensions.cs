@@ -1,11 +1,11 @@
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
-using MyGallery.Admin.Application.Service.Implementation;
-using MyGallery.Admin.Application.Service.Interfaces;
-using MyGallery.Admin.Application.Mapper;
-using MyGallery.Admin.Application.Validations.Brand;
+using CI.Admin.Application.Service.Implementation;
+using CI.Admin.Application.Service.Interfaces;
+using CI.Admin.Application.Mapper;
+using CI.Admin.Application.Validations.Brand;
 
-namespace MyGallery.Admin.Application
+namespace CI.Admin.Application
 {
     public static class ServiceCollectionExtensions
     {

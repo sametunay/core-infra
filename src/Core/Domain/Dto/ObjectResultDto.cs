@@ -1,4 +1,4 @@
-namespace MyGallery.Core.Domain.Dto;
+namespace CI.Core.Domain.Dto;
 
 public record ObjectResultDto<TData> : ResultDto
 {

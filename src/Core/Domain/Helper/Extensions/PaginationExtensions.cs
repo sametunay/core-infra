@@ -1,6 +1,6 @@
 using System;
 
-namespace MyGallery.Core.Domain.Helper.Extensions;
+namespace CI.Core.Domain.Helper.Extensions;
 
 public static class PaginationExtensions
 {

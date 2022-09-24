@@ -1,9 +1,9 @@
 using System.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using MyGallery.Core.Data.Contexts.EF;
+using CI.Core.Data.Contexts.EF;
 
-namespace MyGallery.Core.Infrastructor.UnitOfWork
+namespace CI.Core.Infrastructor.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {

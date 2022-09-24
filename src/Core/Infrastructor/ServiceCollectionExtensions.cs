@@ -1,10 +1,10 @@
 using Microsoft.Extensions.DependencyInjection;
-using MyGallery.Core.Data;
-using MyGallery.Core.Infrastructor.Repositories.Implementation;
-using MyGallery.Core.Infrastructor.Repositories.Interfaces;
-using MyGallery.Core.Infrastructor.UnitOfWork;
+using CI.Core.Data;
+using CI.Core.Infrastructor.Repositories.Implementation;
+using CI.Core.Infrastructor.Repositories.Interfaces;
+using CI.Core.Infrastructor.UnitOfWork;
 
-namespace MyGallery.Core.Infrastructor
+namespace CI.Core.Infrastructor
 {
     public static class ServiceCollectionExtensions
     {

@@ -1,10 +1,10 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
-using MyGallery.Core.Data.Contexts.EF;
-using MyGallery.Core.Domain.Entities;
-using MyGallery.Core.Infrastructor.Repositories.Interfaces;
+using CI.Core.Data.Contexts.EF;
+using CI.Core.Domain.Entities;
+using CI.Core.Infrastructor.Repositories.Interfaces;
 
-namespace MyGallery.Core.Infrastructor.Repositories.Implementation
+namespace CI.Core.Infrastructor.Repositories.Implementation
 {
     public abstract class BaseRepository<TEntity, TKey> : IBaseRepository<TEntity, TKey> where TEntity : BaseEntity<TKey>, new() where TKey : unmanaged
     {

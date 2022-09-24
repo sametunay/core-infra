@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
-using MyGallery.Core.Domain.ValueObjects;
+using CI.Core.Domain.ValueObjects;
 
-namespace MyGallery.Core.Domain.Entities
+namespace CI.Core.Domain.Entities
 {
 	[Table("Cars")]
 	public class Car : BaseEntity<int>

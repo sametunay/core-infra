@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace MyGallery.Core.Data.Contexts.EF
+namespace CI.Core.Data.Contexts.EF
 {
     public class EFDesignTimeFactory : IDesignTimeDbContextFactory<EFContext>
     {

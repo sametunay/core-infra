@@ -1,8 +1,8 @@
 using System;
-using MyGallery.Core.Domain.Entities;
-using MyGallery.Core.Domain.Exceptions;
+using CI.Core.Domain.Entities;
+using CI.Core.Domain.Exceptions;
 
-namespace MyGallery.Core.Domain.Helper.Extensions;
+namespace CI.Core.Domain.Helper.Extensions;
 
 public static class EntityExtensions
 {

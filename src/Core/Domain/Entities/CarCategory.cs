@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MyGallery.Core.Domain.Entities
+namespace CI.Core.Domain.Entities
 {
 	[Table("CarCategories")]
 	public class CarCategory : BaseEntity<int>

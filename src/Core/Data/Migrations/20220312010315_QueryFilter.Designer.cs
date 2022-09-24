@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MyGallery.Core.Data.Contexts.EF;
+using CI.Core.Data.Contexts.EF;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
@@ -24,7 +24,7 @@ namespace Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.Brand", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.Brand", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -43,7 +43,7 @@ namespace Data.Migrations
                     b.ToTable("Brands");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.Car", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.Car", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -75,7 +75,7 @@ namespace Data.Migrations
                     b.ToTable("Cars");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.CarCategory", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.CarCategory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -94,9 +94,9 @@ namespace Data.Migrations
                     b.ToTable("CarCategories");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.Brand", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.Brand", b =>
                 {
-                    b.OwnsOne("MyGallery.Core.Domain.ValueObjects.Audit", "Audit", b1 =>
+                    b.OwnsOne("CI.Core.Domain.ValueObjects.Audit", "Audit", b1 =>
                         {
                             b1.Property<int>("BrandId")
                                 .HasColumnType("integer");
@@ -127,21 +127,21 @@ namespace Data.Migrations
                     b.Navigation("Audit");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.Car", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.Car", b =>
                 {
-                    b.HasOne("MyGallery.Core.Domain.Entities.Brand", "Brand")
+                    b.HasOne("CI.Core.Domain.Entities.Brand", "Brand")
                         .WithMany("Cars")
                         .HasForeignKey("BrandId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MyGallery.Core.Domain.Entities.CarCategory", "CarCategory")
+                    b.HasOne("CI.Core.Domain.Entities.CarCategory", "CarCategory")
                         .WithMany("Cars")
                         .HasForeignKey("CarCategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.OwnsOne("MyGallery.Core.Domain.ValueObjects.Audit", "Audit", b1 =>
+                    b.OwnsOne("CI.Core.Domain.ValueObjects.Audit", "Audit", b1 =>
                         {
                             b1.Property<int>("CarId")
                                 .HasColumnType("integer");
@@ -176,9 +176,9 @@ namespace Data.Migrations
                     b.Navigation("CarCategory");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.CarCategory", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.CarCategory", b =>
                 {
-                    b.OwnsOne("MyGallery.Core.Domain.ValueObjects.Audit", "Audit", b1 =>
+                    b.OwnsOne("CI.Core.Domain.ValueObjects.Audit", "Audit", b1 =>
                         {
                             b1.Property<int>("CarCategoryId")
                                 .HasColumnType("integer");
@@ -209,12 +209,12 @@ namespace Data.Migrations
                     b.Navigation("Audit");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.Brand", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.Brand", b =>
                 {
                     b.Navigation("Cars");
                 });
 
-            modelBuilder.Entity("MyGallery.Core.Domain.Entities.CarCategory", b =>
+            modelBuilder.Entity("CI.Core.Domain.Entities.CarCategory", b =>
                 {
                     b.Navigation("Cars");
                 });

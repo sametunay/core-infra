@@ -1,7 +1,7 @@
 using System.Data;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace MyGallery.Core.Infrastructor.UnitOfWork
+namespace CI.Core.Infrastructor.UnitOfWork
 {
     public interface IUnitOfWork : IDisposable
     {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Net;
 
-namespace MyGallery.Core.Domain.Exceptions.Messages;
+namespace CI.Core.Domain.Exceptions.Messages;
 
 public static class InMemoryExceptionMessages
 {

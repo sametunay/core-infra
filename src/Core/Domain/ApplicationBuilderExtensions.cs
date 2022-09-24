@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Builder;
-using MyGallery.Core.Domain.Middleware;
+using CI.Core.Domain.Middleware;
 
-namespace MyGallery.Core.Domain;
+namespace CI.Core.Domain;
 
 public static class ApplicationBuilderExtensions
 {

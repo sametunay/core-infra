@@ -1,6 +1,6 @@
 using System;
 
-namespace MyGallery.Core.Domain.Exceptions;
+namespace CI.Core.Domain.Exceptions;
 
 public class NotFoundException : BaseException
 {

@@ -1,15 +1,15 @@
-global using MyGallery.Core.Domain.Enums;
+global using CI.Core.Domain.Enums;
 using AutoMapper;
-using MyGallery.Admin.Application.Dto;
-using MyGallery.Admin.Application.Dto.Resource;
-using MyGallery.Admin.Application.Service.Interfaces;
-using MyGallery.Core.Domain.Dto;
-using MyGallery.Core.Domain.Entities;
-using MyGallery.Core.Domain.Exceptions;
-using MyGallery.Core.Domain.Helper.Extensions;
-using MyGallery.Core.Infrastructor.Repositories.Interfaces;
+using CI.Admin.Application.Dto;
+using CI.Admin.Application.Dto.Resource;
+using CI.Admin.Application.Service.Interfaces;
+using CI.Core.Domain.Dto;
+using CI.Core.Domain.Entities;
+using CI.Core.Domain.Exceptions;
+using CI.Core.Domain.Helper.Extensions;
+using CI.Core.Infrastructor.Repositories.Interfaces;
 
-namespace MyGallery.Admin.Application.Service.Implementation;
+namespace CI.Admin.Application.Service.Implementation;
 
 public class BaseService<TEntity, TKey, TResult> : IBaseService<TEntity, TKey, TResult> where TEntity : BaseEntity<TKey>, new() where TKey : unmanaged where TResult : ResultDto, new()
 {

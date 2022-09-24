@@ -1,7 +1,7 @@
 using FluentValidation;
-using MyGallery.Admin.Application.Dto.Update;
+using CI.Admin.Application.Dto.Update;
 
-namespace MyGallery.Admin.Application.Validations.Car;
+namespace CI.Admin.Application.Validations.Car;
 
 public class UpdateCarValidator : AbstractValidator<UpdateCarDto>
 {

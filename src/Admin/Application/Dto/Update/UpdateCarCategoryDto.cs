@@ -1,7 +1,7 @@
-using MyGallery.Admin.Application.Dto.Create;
-using MyGallery.Core.Domain.Enums;
+using CI.Admin.Application.Dto.Create;
+using CI.Core.Domain.Enums;
 
-namespace MyGallery.Admin.Application.Dto.Update;
+namespace CI.Admin.Application.Dto.Update;
 
 public record UpdateCarCategoryDto : CreateCarCategoryDto
 {
