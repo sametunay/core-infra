@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 using Microsoft.OpenApi.Models;
 using CI.Core.Domain;
 using CI.Core.Domain.Options;
-using CI.Core.Infrastructor;
+using CI.Core.Infrastructure;
 using CI.UI.Application;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers().AddJsonOptions(options => options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options => SetApiInfo(options));
-builder.Services.AddInfrastructor(builder.Configuration.GetSection(nameof(PsglOptions)).Get<PsglOptions>().ConnectionString);
+builder.Services.AddInfrastructure(builder.Configuration.GetSection(nameof(PsglOptions)).Get<PsglOptions>().ConnectionString);
 builder.Services.AddUiApplication();
 builder.Services.AddOptions<HelpOptions>(builder.Configuration.GetSection(nameof(HelpOptions)).Value);
 

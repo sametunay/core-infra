@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Core\Domain\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "src\Core\Data\Data.csproj", "{34474BFA-280F-4E24-9E60-6885624686E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructor", "src\Core\Infrastructor\Infrastructor.csproj", "{E8DB5ECC-51D9-406B-A887-4DA8DA2CA6B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Core\Infrastructure\Infrastructure.csproj", "{E8DB5ECC-51D9-406B-A887-4DA8DA2CA6B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{EA6B5600-0FB4-41DE-B12E-C45F10B6B30F}"
 EndProject

@@ -7,7 +7,7 @@ using CI.Core.Domain.Dto;
 using CI.Core.Domain.Entities;
 using CI.Core.Domain.Exceptions;
 using CI.Core.Domain.Helper.Extensions;
-using CI.Core.Infrastructor.Repositories.Interfaces;
+using CI.Core.Infrastructure.Repositories.Interfaces;
 
 namespace CI.Admin.Application.Service.Implementation;
 

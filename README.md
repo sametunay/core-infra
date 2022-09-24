@@ -28,7 +28,7 @@ Tüm katmanların kullanabileceği herkese açık bir altyapı sunmayı amaçlar
 
     ├── Data            : Seçilen veri depolama teknolojisini soyutlamayı amaçlar. 
     ├── Domain          : Diğer katmanlardan bağımsız olarak, model, utilities gibi objeleri barındırır.
-    └── Infrastructor   : Altyapısal tüm operasyonlar bu katmanda gerçekleştirilir.
+    └── Infrastructure   : Altyapısal tüm operasyonlar bu katmanda gerçekleştirilir.
 
 # Folder Structure
 
@@ -54,7 +54,7 @@ Tüm katmanların kullanabileceği herkese açık bir altyapı sunmayı amaçlar
     │   │   │   ├── Middleware
     │   │   │   ├── Options
     │   │   │   └── ValueObjects
-    │   │   └── Infrastructor
+    │   │   └── Infrastructure
     │   │       ├── Log
     │   │       ├── Mail
     │   │       ├── Repositories

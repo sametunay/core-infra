@@ -4,7 +4,7 @@ using CI.Admin.Application.Dto.Update;
 using CI.Admin.Application.Service.Interfaces;
 using CI.Core.Domain.Dto;
 using CI.Core.Domain.Entities;
-using CI.Core.Infrastructor.Repositories.Interfaces;
+using CI.Core.Infrastructure.Repositories.Interfaces;
 
 namespace CI.Admin.Application.Service.Implementation
 {

@@ -1,6 +1,6 @@
 using AutoMapper;
 using CI.Core.Domain.Entities;
-using CI.Core.Infrastructor.Repositories.Interfaces;
+using CI.Core.Infrastructure.Repositories.Interfaces;
 using CI.UI.Application.Services.Interfaces;
 
 namespace CI.UI.Application.Services.Imlementation;

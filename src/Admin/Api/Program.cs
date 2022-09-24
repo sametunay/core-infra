@@ -4,7 +4,7 @@ using CI.Admin.Application;
 using CI.Core.Domain;
 using CI.Core.Domain.Middleware;
 using CI.Core.Domain.Options;
-using CI.Core.Infrastructor;
+using CI.Core.Infrastructure;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +13,7 @@ builder.Services.AddControllers().AddJsonOptions(options => options.JsonSerializ
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options => SetApiInfo(options));
 
-builder.Services.AddInfrastructor(builder.Configuration.GetSection(nameof(PsglOptions)).Get<PsglOptions>().ConnectionString);
+builder.Services.AddInfrastructure(builder.Configuration.GetSection(nameof(PsglOptions)).Get<PsglOptions>().ConnectionString);
 builder.Services.AddAdminApplication();
 builder.Services.AddOptions<HelpOptions>(builder.Configuration.GetSection(nameof(HelpOptions)).Value);
 builder.Services.AddExceptionHandlerService();
